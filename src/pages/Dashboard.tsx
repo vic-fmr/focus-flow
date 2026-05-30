@@ -344,7 +344,7 @@ export function Dashboard() {
                     type="number"
                     min="0"
                     value={estimatedTime}
-                    onChange={e => setEstimatedTime(e.target.value)}
+                    onChange={e => setEstimatedTime(e.target.value === '' ? '' : Number(e.target.value))}
                     className="w-full bg-background border border-surface-hover text-zinc-100 rounded-lg py-2 px-3 focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none"
                     placeholder="Ex: 30"
                   />
